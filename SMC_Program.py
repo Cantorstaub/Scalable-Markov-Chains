@@ -1,4 +1,5 @@
 # Thomas Nyckel, 2025
+# Revised version 1.1
 
 """ Um mit Zufallszahlen operieren zu können, benötigen wir das Modul random """
 import random
