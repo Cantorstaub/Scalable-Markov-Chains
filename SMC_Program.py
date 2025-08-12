@@ -44,13 +44,8 @@ print("\n===============\n")
 """ Hier wird Text aus der Datei 'test-file.txt' geladen, in einzelne Zeichen zerlegt und in einer Liste gespeichert """
 
 """ Textfile öffnen und einlesen """
-text_file = open('test-file.txt','r', encoding="utf-8") # Öffnen der Datei
-file_contents = text_file.read() # Lesen der Datei
-
-""" Textfile schließen """
-text_file.close()
-""" Hier sehen Sie ein sogenannstes Anti-Pattern in Python, Code also, der anders geschrieben werden müsste, um in Python als sauber zu gelten. Hier, beim
-Öffnen der Datei müsste nämlich mit with gearbeitet werden, damit ganz sicher ist, dass die geöffnete Textdatei nach getaner Arbeit auch wieder geschlossen wird. """
+with open('test-file.txt','r', encoding="utf-8") as text_file: # Öffnen der Datei
+	file_contents = text_file.read() # Lesen der Datei
 
 # Die n-Gramme werden aus dem Input-Text gelesen und im dict abgelegt.
 
