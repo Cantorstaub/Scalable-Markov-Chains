@@ -45,7 +45,7 @@ print("\n===============\n")
 """ Hier wird Text aus der Datei 'test-file.txt' geladen, in einzelne Zeichen zerlegt und in einer Liste gespeichert """
 
 """ Textfile öffnen und einlesen """
-with open('test-file.txt','r', encoding="utf-8") as text_file: # Öffnen der Datei
+with open('input.txt','r', encoding="utf-8") as text_file: # Öffnen der Datei
 	file_contents = text_file.read() # Lesen der Datei
 
 # Die n-Gramme werden aus dem Input-Text gelesen und im dict abgelegt.
