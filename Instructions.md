@@ -16,6 +16,6 @@ You need Python 3 installed on your computer to execute the program.
 
 ## Executing the Program
 
-5) To execute the program, you will have to __open the console__. a) On Windows Systems, in the search bar at the bottom left, type `PowerShell` and then start PowerShell. b) On Mac OS, press `Command + Space` to open the search bar. Here, type `terminal` and start the terminal.
+5) To execute the program, you will have to __open the console__: a) On Windows Systems, in the search bar at the bottom left, type `PowerShell` and then start PowerShell. b) On Mac OS, press `Command + Space` to open the search bar. Here, type `terminal` and start the terminal.
 
-6) 
+6) In the console of your system opened in step 5, we now have to __navigate to the folder__ you have created in step 1. This is the folder where the two files, `SMC_Program.py` from step 2 and `input.txt` from step 3, are stored. With the command `ls`, you can 
