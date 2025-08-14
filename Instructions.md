@@ -6,7 +6,7 @@ You need Python 3 installed on your computer to execute the program.
 
 ## Preparations
 
-1) Choose or create a folder on your hard drive where you want to store the program.
+1) __Choose or create a folder__ on your hard drive where you want to store the program. You can name it any way you want, e.g., `Markov-Chains_Python`.
 
 2) Either a) __download the program__ from GitHub by loading the file `SMC_Program.py` to the folder created in step 1. Or b) __create a new file__ within the folder created in step 1. Save the file under the name `SMC_Program.py`. It is essential to type the name without any deviations or errors. Then you __copy the contents__ of the same-named file `SMC_Program.py` from GitHub into the file you just created and __save the file__ after doing this. To create the file, you can use almost any text editor. My personal choice is the text editor _Sublime_, which you can download and use for free (I am not affiliated with them by any means).
 
