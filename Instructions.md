@@ -2,6 +2,8 @@ To use the Scalable Markov Chains program and to create output texts, please fol
 
 The instructions are designed with newcomers to Python and programming in mind.
 
+You need Python 3 installed on your computer to execute the program.
+
 ## Preparations
 
 1) Choose or create a folder on your hard drive where you want to store the program.
@@ -14,3 +16,6 @@ The instructions are designed with newcomers to Python and programming in mind.
 
 ## Executing the Program
 
+5) To execute the program, you will have to __open the console__. a) On Windows Systems, in the search bar at the bottom left, type `PowerShell` and then start PowerShell. b) On Mac OS, press `Command + Space` to open the search bar. Here, type `terminal` and start the terminal.
+
+6) 
