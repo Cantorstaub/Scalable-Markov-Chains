@@ -26,10 +26,10 @@ You need Python 3 installed on your computer to execute the program.
 
 ### Experimenting with the Program’s Variables
 
-I am not delving into the basic concepts of Markov chains here. For this, compare the texts referenced in the `README.md` file. After that, you can study the code of the program and the comments to get an understanding of what is happening here.
+I am not delving into the basic concepts of Markov chains here. For this, compare the two texts referenced in the `README.md` file.
  
-Still, experimenting with some parameters is also a good avenue to grasp the functionality of the program. So the next steps would be to run the program with varying input texts and different lengths of the group of symbols the Markov chain checks to determine which symbols could come next, and see how the quality of the output changes.
+Still, experimenting with the program’s parameters is also a good avenue to grasp its functionality. So the next steps would be to run the program with varying input texts and different lengths of the group of symbols the Markov chain checks to determine which symbols could come next.
 
 9) To __use different input texts__, go back to step 4, __copy another text__ into the `input.txt` file and __save the file__. If you haven’t already, try longer text, the content of a whole book, or huge parts of your own (scientific) writings. If it is okay for you, you could copy the content of the Bible from [here (English)](https://raw.githubusercontent.com/mxw/grmr/master/src/finaltests/bible.txt), or [here (German, but better to use with a Windows system because of the sometimes incorrect rendering of letters on Mac with this source)](https://www.informatik.htw-dresden.de/~robge/bs1/prak/bibel.txt) and check out the results. You can also use texts in other languages containing symbols different from the Western ones. Or even mathematical formulas.
 
-10) 
+10) An eben bigger factor for the quality of the output of the program is the lenght of the group of symbols the program looks at to determine the next symbol for the output string. So, __changing the value of the variable `Länge_der_n_Gramme`__ at the top of the program’s code will have an tremendous effect on this quality and the readabiliy of the output text.
