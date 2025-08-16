@@ -25,3 +25,9 @@ You need Python 3 installed on your computer to execute the program.
 8) If the program has worked, you can proceed to step 9. If it has not, you have to do some __troubleshooting__. One of the most basic issues to check is whether the command `python` that you used when trying to start the program in step 7 is the correct one for your computer. If, on Windows, instead of delivering the desired output, the console responded to you with something like `Python was not found but can be installed from the Microsoft Store:` – or on Mac OS with something like `python: command not found` –, you might have to __use a different command__ to tell the computer to start Python. On Windows, instead of the command from step 7, try just `py SMC_Program.py`. On Mac, try `python3 SMC_Program.py` and thereby tell the Computer which version of Python you want to start. If these commands are not producing the correct outcome either, __copy the error message from the console and search online for a solution__. This kind of troubleshooting is part of learning how to program (and of programming itself), and by no means an indicator of your ability to master it.
 
 ### Experimenting with the Program’s Variables
+
+I am not delving into the basic concepts of Markov chains here. For this, compare the texts referenced in the `README.md` file. After that, you can study the code of the program and the comments to get an understanding of what is happening here.
+
+Still, experimenting with some parameters is also a good thing to grasp the functionality of the program. You run the program with varying input texts and different lengths of the group of symbols the Markov chain should look at to determine how likely it is for another symbol to follow after them, and see how the quality of the output changes.
+
+9) 
