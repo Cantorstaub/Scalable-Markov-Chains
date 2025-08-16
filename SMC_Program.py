@@ -12,7 +12,7 @@ import random
 
 
 """ Länge der n-Gramme, die maximal beachtet werden, um aus ihnen den nächsten Buchstaben abzuleiten """
-Länge_der_n_Gramme = 4
+Länge_der_n_Gramme = 1
 
 """ Bestimmt, wieviele Zeichen lang der neu generierte Text sein soll """
 laenge_Ausgabe = 500
