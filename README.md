@@ -18,6 +18,6 @@ To understand what these simple Markov chains are about from the perspective of 
 
 [[2]](#_ftnref2)
 
-[[3]](#_ftnref3) See for the output created by Shannon’s program Shannon (2000): _Ein/Aus_, p. 20.
+[[3]](#_ftnref3) Compare e.g., the output created by your program with that from Shannon’s as seen in Shannon (2000): _Ein/Aus_, p. 20.
 
 [[4]](#_ftnref4)
