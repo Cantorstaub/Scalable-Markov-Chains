@@ -12,7 +12,7 @@ The design of the program followed the didactic idea to be easily accessible and
 
 For instructions on how to use the program, see the `Instructions.md` file.
 
-To quickly understand what these simple Markov chains are about, a suitable starting point from the perspective of Media Studies is the aforementioned texts of Shannon [[3]](#_ftn3) and Kittler [[4]](#_ftn4). 
+To understand what these simple Markov chains are about from the perspective of Media Studies, a suitable starting point is the aforementioned texts of Shannon [[3]](#_ftn3) and Kittler [[4]](#_ftn4). 
 
 [[1]](#_ftnref1) Shannon, Claude E. (2000): _Ein/Aus. Ausgewählte Schriften zur Kommunikation- und Nachrichtentheorie_. Berlin: Brinkmann und Bose.
 
