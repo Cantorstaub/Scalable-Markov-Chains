@@ -12,12 +12,12 @@ The design of the program followed the didactic idea to be easily accessible and
 
 For instructions on how to use the program, see the `Instructions.md` file.
 
-To understand what these simple Markov chains are about from the perspective of Media Studies, a suitable starting point is the aforementioned texts of Shannon and Kittler [[4]](#_ftn4). You might, e.g., compare the output created by your program with the historical results from Shannon [[3]](#_ftn3). 
+To understand what these simple Markov chains are about from the perspective of Media Studies, a suitable starting point is the aforementioned texts of Shannon [[3]](#_ftn3) and Kittler [[4]](#_ftn4).
 
 [[1]](#_ftnref1) Shannon, Claude E. (2000): _Ein/Aus. Ausgewählte Schriften zur Kommunikation- und Nachrichtentheorie_. Berlin: Brinkmann und Bose.
 
 [[2]](#_ftnref2) Kittler, Friedrich A. (1993): ‚Die Welt des Symbolischen - eine Welt der Maschine‘. In: _Draculas Vermächtnis. Technische Schriften_. 1. Auflage. Leipzig: Reclam, S. 58–80.
 
-[[3]](#_ftnref3) Shannon (2000): _Ein/Aus_, p. 20.
+[[3]](#_ftnref3) You might, e.g., compare the output created by your program with the historical results from Shannon as seen in Shannon (2000): _Ein/Aus_, p. 20.
 
 [[4]](#_ftnref4) Kittler (1993): ‚Die Welt des Symbolischen - eine Welt der Maschine‘, p. 73.
