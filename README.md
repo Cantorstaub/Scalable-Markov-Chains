@@ -17,7 +17,7 @@ To embed your hands-on engagement with the program within discursive analysis fr
 
 Programmer’s note: As the program is intended for didactic purposes and newcomers to _Python_, the program is easily accessible and understandable. For instance, the program does not use numerical values to store the probabilities of symbols following each other. Instead, all combinations of symbols up to the chosen length are stored in a dictionary and together represent these probabilities without the need to add another level of abstraction to the program’s structure.
 
-## References
+## Endnotes
 
 [[1]](#_ftnref1) You can compare the output of your program with the historical one from Shannon in: Shannon, Claude E. (1948): A Mathematical Theory of Communication. In: _Bell System Technical Journal_ 27/3, pp. 379–423, here: p. 388. This is only the first part of this paper. The second part was published in the October issue of the same journal on pages 623–656. If you prefer a translated German version of Shannon’s paper, see: Shannon, Claude E. (2000): _Ein/Aus. Ausgewählte Schriften zur Kommunikation- und Nachrichtentheorie_. Edited by Kittler, Friedrich A./Berz, Peter/Hauptmann, David/Roch, Axel. Berlin: Brinkmann und Bose, p. 20.
 
