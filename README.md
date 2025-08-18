@@ -19,8 +19,9 @@ For a deeper understanding of the subject matter, see the `Instructions.md` file
 
 ## References
 
-[[1]](#_ftnref1) You can compare the output of your program with the historical one from Shannon in: Shannon, Claude E. (1948): ‚A Mathematical Theory of Communication‘. In: _Bell System Technical Journal_ 27/3, pp. 379–423, here: p. 388. This is only the first part of this paper. The second part was published in the October issue of the same journal on pages 623–656. If you prefer a translated German version of Shannon’s paper, see: Shannon, Claude E. (2000): _Ein/Aus. Ausgewählte Schriften zur Kommunikation- und Nachrichtentheorie_. Edited by Kittler, Friedrich A./Berz, Peter/Hauptmann, David/Roch, Axel. Berlin: Brinkmann und Bose, p. 20.
+[[1]](#_ftnref1) You can compare the output of your program with the historical one from Shannon in: Shannon, Claude E. (1948): A Mathematical Theory of Communication. In: _Bell System Technical Journal_ 27/3, pp. 379–423, here: p. 388. This is only the first part of this paper. The second part was published in the October issue of the same journal on pages 623–656. If you prefer a translated German version of Shannon’s paper, see: Shannon, Claude E. (2000): _Ein/Aus. Ausgewählte Schriften zur Kommunikation- und Nachrichtentheorie_. Edited by Kittler, Friedrich A./Berz, Peter/Hauptmann, David/Roch, Axel. Berlin: Brinkmann und Bose, p. 20.
 
-[[2]](#_ftnref2) Kittler, Friedrich A.: ‚The World of the Symbolic – A World of the Machine‘.
+[[2]](#_ftnref2) Kittler, Friedrich A. (1997): The World of the Symbolic – A World of the Machine. In: Kittler, Friedrich A.: _Literature, Media, Information Systems. Friedrich A. Kittler Essays_. Edited by John Johnston. Critical Voices in Art, Theory and Culture. The series is edited by Saul Ostrow. Translated by Stefanie Harris. London/New York: Routledge, pp. 130–146, here: p. 
+
 
 Kittler, Friedrich A. (1993): ‚Die Welt des Symbolischen - eine Welt der Maschine‘. In: _Draculas Vermächtnis. Technische Schriften_. 1. Auflage. Leipzig: Reclam, pp. 58–80, here: p. 73
