@@ -17,6 +17,8 @@ As it is intended for didactic purposes and newcomers to _Python_, the program i
 
 For a deeper understanding of the subject matter, see the `Instructions.md` file and read the commentary in the program in the `SMC_Program.py` file (albeit in German).
 
+## References
+
 [[1]](#_ftnref1) Shannon, Claude E. (2000): _Ein/Aus. Ausgewählte Schriften zur Kommunikation- und Nachrichtentheorie_. Berlin: Brinkmann und Bose, p. 20.
 
 [[2]](#_ftnref2) Kittler, Friedrich A. (1993): ‚Die Welt des Symbolischen - eine Welt der Maschine‘. In: _Draculas Vermächtnis. Technische Schriften_. 1. Auflage. Leipzig: Reclam, S. 58–80, here: p. 73
