@@ -19,6 +19,6 @@ For a deeper understanding of the subject matter, see the `Instructions.md` file
 
 ## References
 
-[[1]](#_ftnref1) Shannon, Claude E. (2000): _Ein/Aus. Ausgewählte Schriften zur Kommunikation- und Nachrichtentheorie_. Berlin: Brinkmann und Bose, p. 20.
+[[1]](#_ftnref1) Shannon, Claude E. (2000): _Ein/Aus. Ausgewählte Schriften zur Kommunikation- und Nachrichtentheorie_. Edited by Kittler, Friedrich A./Berz, Peter/Hauptmann, David/Roch, Axel. Berlin: Brinkmann und Bose, p. 20.
 
 [[2]](#_ftnref2) Kittler, Friedrich A. (1993): ‚Die Welt des Symbolischen - eine Welt der Maschine‘. In: _Draculas Vermächtnis. Technische Schriften_. 1. Auflage. Leipzig: Reclam, S. 58–80, here: p. 73
