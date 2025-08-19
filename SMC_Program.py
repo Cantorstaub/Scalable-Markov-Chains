@@ -160,7 +160,7 @@ if len(file_contents) >= Länge_der_n_Gramme + 1:
 					Nächstes_Zeichen = random.choice(Übergangswahrscheinlichkeiten[Ausgabestring[ - (Länge_betrachtete_Zeichenfolge):]])
 					""" Da ein nächstes Zeichen nun gefunden wurde, wird die innere for-Schleife abgebrochen. """
 					break
-		""" Das zuvor bestimmte Zeichen oder die Zeichenfolge wird an das Ende des Outputs angefügt. """
+		""" Das zuvor bestimmte Zeichen wird an das Ende des Outputs angefügt. """
 		Ausgabestring = Ausgabestring + Nächstes_Zeichen
 
 """ Zweites Modul: Hauptteil der Synthesefunktion
@@ -174,39 +174,37 @@ Der Output wird dann ausgegeben. """
 """ Zu Länge_der_n_Gramme wird 1 addiert. Dies verhindert, dass der gesamte Input als ein n-Gramm herangezogen wird.
 In diesem Fall gäbe es sonst kein Zeichen als value für diesen key und damit käme es zu einem error. """
 if len(file_contents) >= Länge_der_n_Gramme + 1:
-	""" Solange die gewünschte Zeichenzahl im Ausgabestring nicht erreicht wurde, sollen dann weitere Zeichen
-	gezogen werden. """
+	""" Solange die gewünschte Zeichenzahl im Ausgabestring nicht erreicht wurde, sollen weitere Zeichen gezogen werden. """
 	while len(Ausgabestring) < laenge_Ausgabe:
 		""" Die letzten Zeichen des Ausgabestrings werden betrachtet. Beginnend bei der in Länge_der_n_Gramme
-		festgesetzten Länge an Zeichen. Diese Länge wird dann ggf. im weiteren Verlauf verkürzt. """
+		festgesetzten Länge an Zeichen. Diese Länge wird dann, wenn notwendig, im weiteren Verlauf verkürzt. """
 		for Länge_betrachtete_Zeichenfolge in range (Länge_der_n_Gramme, -1, -1):
 			if Länge_betrachtete_Zeichenfolge == 0:
 				""" Wurde kein Match im dict gefunden, auch nicht für das letzte Zeichen des Ausgabestrings, so
 				wird random ein Zeichen aus dem Alphabet für Kleinbuchstaben gezogen. """
 				Nächstes_Zeichen = (random.choice(Alphabet_Kleinbuchstaben))
-				""" Kann aktiviert werden zum Debugging. """
+				""" Die folgende Zeile kann aktiviert werden zum Debugging durch Entfernen der Raute. """
 				# print(f"Nächstes_Zeichen = {Nächstes_Zeichen}. Random.")
-				""" Da ein nächstes Zeichen nun gefunden wurde, wird die innere for Schleife unterbrochen. """
+				""" Da ein nächstes Zeichen nun gefunden wurde, wird die innere for-Schleife abgebrochen. """
 				break
 			else:
-				""" Geprüft wird, ob die jeweils letzten Zeichen des Outputs ein key im dict sind. Sind sie es, wir zufällig
+				""" Geprüft wird, ob die jeweils letzten Zeichen des Outputs ein key im dict sind. Sind sie es, wird zufällig
 				ein nächstes Zeichen aus dem dazugehörigen value gezogen. """
-				""" Die jeweils letzten Zeichen des Ausgabestrings werden herangezogen und geprüft, ob sie ein key
-				im dict der Übergangswahrscheinlichkeiten sind. """
 				if Ausgabestring[ -(Länge_betrachtete_Zeichenfolge):] in Übergangswahrscheinlichkeiten:
 					""" Gab es ein match im dict, wird das nächste Zeichen random aus der zum key gehörigen Liste als value
 					gezogen. """
 					Nächstes_Zeichen = random.choice(Übergangswahrscheinlichkeiten[Ausgabestring[ - (Länge_betrachtete_Zeichenfolge):]])
-					""" Kann aktiviert werden zum Debugging. """
+					""" Kann aktiviert werden zum Debugging durch Entfernen der Raute. """
 					# print(f"Nächstes_Zeichen = {Nächstes_Zeichen}. Aus Dict Key: {Ausgabestring[ - (Länge_betrachtete_Zeichenfolge):]}")
-					""" Da ein nächstes Zeichen nun gefunden wurde, wird die innere for Schleife unterbrochen. """
+					""" Da ein nächstes Zeichen nun gefunden wurde, wird die innere for-Schleife abgebrochen. """
 					break
-		""" Das zuvor bestimmte Zeichen oder die Zeichenfolge wird an das Ende des Outputs angefügt. """
+		""" Das zuvor bestimmte Zeichen wird an das Ende des Outputs angefügt. """
 		Ausgabestring = Ausgabestring + Nächstes_Zeichen
-		""" Kann aktiviert werden zum Debugging. """
+		""" Kann aktiviert werden zum Debugging durch Entfernen der Raute. """
 		# print(Ausgabestring)
 
-""" Kann aktiviert werden, um zum Debugging den Inhalt des Dicts Übergangswahrscheinlichkeiten auszugeben. """
+""" Kann durch Entfernen der Raute aktiviert werden, um zum Debugging den Inhalt des dicts Übergangswahrscheinlichkeiten
+auszugeben. """
 # print(f"Übergangswahrscheinlichkeiten: {Übergangswahrscheinlichkeiten}")
 
 """ Werte zur Ansicht ausgeben. """
@@ -214,8 +212,8 @@ print(f"Länge_der_n_Gramme = {Länge_der_n_Gramme}")
 print(f"laenge_Ausgabe = {laenge_Ausgabe}\n")
 
 """ Ausgabestring als zentrales Ergebnis des Programms ausgeben. """
-""" Dies aber nur, wenn auch etwas erzeugt wurde, wenn also der Input-Text eins länger war als die gewünschte Länge
-der n-Gramme. War das nicht der Fall, wird stattdessen ausgegeben, wie lang der Input-Text war. """
+""" Dies aber nur, wenn auch etwas erzeugt wurde, wenn also der Input-text um 1 länger war als die gewünschte Länge
+der n-Gramme. War das nicht der Fall, wird stattdessen ausgegeben, wie lang der Input-text war. """
 if len(file_contents) >= Länge_der_n_Gramme + 1:
 	print(f'Generierter Text:\n\n"{Ausgabestring}"\n')
 else:
