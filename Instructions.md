@@ -1,3 +1,5 @@
+https://github.com/Cantorstaub/Scalable-Markov-Chains
+
 To use the Scalable Markov Chains program and to create output texts, please follow these instructions.
 
 The instructions are designed with newcomers to Python and programming in mind.
@@ -34,4 +36,4 @@ Still, experimenting with the program’s parameters is also a good avenue to gr
 
 10) An even bigger factor for the quality of the output of the program is the length of the group of symbols the program will look at to determine the next symbol for the output string. So, we now __change the value of the variable `Länge_der_n_Gramme`__ at the top of the program’s code. This will have a tremendous effect on this quality and the readability of the output text. As the program is now, as you have copied or loaded it from GitHub, `Länge_der_n_Gramme = 1`. This means that the program only looks at the last symbol in the output string in each iteration to determine which symbols could come next. If we change this value from `1` to `2`, the program will instead look at the last two symbols of the output string to determine which symbols might come next. You will see how this extension from one to two symbols renders the output text much more similar to written language (depending on the form of text you have copied into the `input.txt` file. So my recommendation would be to __increment the value of `Länge_der_n_Gramme` in the program first from `1` to `2`, to save the program and to rerun it to check the quality of the output. In small steps, you can increase the value for `Länge_der_n_Gramme` and see the quality of the output change.__ There will come a point where the output texts begin to make at least some sense for their reader. Be aware: Depending on your computer, values for `Länge_der_n_Gramme` higher than 15 might result in runtimes of up to several minutes for the program. If you have accidentally put in a very high value for `Länge_der_n_Gramme` and want to quit the program extraordinarily, use `Ctrl + C` to stop the program and retrieve control over your console.
 
-_last edit_: 2025-08-19
+_Last edit_: 2025-08-19
