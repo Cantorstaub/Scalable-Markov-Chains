@@ -2,6 +2,7 @@
 # Revised version 1.1
 
 """ For instructions on how to use the program, see the Instructions.md file on GitHub. """
+""" For a brief introduction to the purpose and functionalities of the program, see the README.md file in GitHub. """
 
 """ Um mit Zufallszahlen operieren zu können, benötigen wir das Modul random """
 import random
@@ -11,10 +12,10 @@ import random
 # ----------------------
 
 
-""" Länge der n-Gramme, die maximal beachtet werden, um aus ihnen den nächsten Buchstaben abzuleiten """
+""" Länge der n-Gramme, die maximal beachtet werden, um aus ihnen den nächsten Buchstaben abzuleiten. """
 Länge_der_n_Gramme = 1
 
-""" Bestimmt, wieviele Zeichen lang der neu generierte Text sein soll """
+""" Bestimmt, wieviele Zeichen lang der neu generierte Text sein soll. """
 laenge_Ausgabe = 500
 
 """ Ein Alphabet von Großbuchstaben, die dann random gezogen werden können. """
@@ -32,7 +33,7 @@ Alphabet_Kleinbuchstaben = [
 """ Dieser String enhält am Ende den Output des Programms. """
 Ausgabestring = ''
 
-""" Text für die Warnung, die ausgegeben wird, wenn der Input-Text kürzer ist als die Länger der gewünschten
+""" Text für die Warnung, die ausgegeben wird, wenn der Input-Text kürzer ist als die Länge der gewünschten
 n-Gramme. Das Programm wird dann nicht ausgeführt, da es in diesem Fall abstürzen würde. """
 Warnung_Länge = "WARNUNG! Programm konnte nicht ausgeführt werden. Der Input-Text muss ein Zeichen länger sein als die Länge der gewünschten n-Gramme.\n"
 
@@ -41,30 +42,36 @@ Warnung_Länge = "WARNUNG! Programm konnte nicht ausgeführt werden. Der Input-T
 # ---------------
 
 
-""" Ein Abstandhalter für die Übersichtlichkeit der Ausgabe wird ausgegeben. """
+""" Ein Abstandhalter wird ausgegeben, um die Ausgabe in der Konsole übersichtlicher zu machen. """
 print("\n===============\n")
 
-""" Hier wird Text aus der Datei 'test-file.txt' geladen, in einzelne Zeichen zerlegt und in einer Liste gespeichert """
+""" Hier wird Text aus der Datei 'input.txt' geladen, in einzelne Zeichen zerlegt und in einer Liste gespeichert. """
 
-""" Textfile öffnen und einlesen """
+""" Textfile 'input.txt' öffnen und seinen Inhalt einlesen. """
 with open('input.txt','r', encoding="utf-8") as text_file: # Öffnen der Datei
-	file_contents = text_file.read() # Lesen der Datei
+	file_contents = text_file.read() # Speichern des Inhalts der Datei in file_contents
 
-# Die n-Gramme werden aus dem Input-Text gelesen und im dict abgelegt.
+""" Nun werden die n-Gramme werden aus dem Input-Text gelesen und im dict abgelegt. Dies beinhaltet noch keine
+Übergangswahrscheinlichkeiten bzw. die auf die n-Gramme folgenden Zeichen. Diese werden in einem späteren Schritt
+extra analysiert und gespeichert. """
 
-""" Ist der Input-Text kürzer als n? Falls ja, Abbruch mit Hinweis.
-Erste Hauptschleife, n wird dekrementiert bis 0.
-Zeichenfolgen mit n, n -1, etc. Länge werden als keys im dict abgelegt.
-Im Dictionary wird ein Key angelegt für jede Zeichenfolge bis zur Länge n aus dem Input.
+""" Vorgehen:
+Damit wir uns an der Länge_der_n_Gramme orientieren können, ohne diesen Wert zu überschreiben, speichern wir den
+Wert aus Länge_der_n_Gramme in der neuen Variable nGrammlänge_in_Schleife.
+Ist der Input-Text kürzer als Länge_der_n_Gramme? Falls ja, Abbruch mit Hinweis.
+Erste Hauptschleife, nGrammlänge_in_Schleife wird dekrementiert bis 0.
+Zeichenfolgen mit nGrammlänge_in_Schleife, nGrammlänge_in_Schleife -1, etc. Länge werden als keys im dict abgelegt.
+Im Dictionary wird ein key angelegt für jede Zeichenfolge bis zur Länge nGrammlänge_in_Schleife aus dem Input.
+Damit werden alle n-Gramme aus dem Input-text im Dictionary gespeichert.
 Redundante Zeichen werden nicht beachtet. Die jeweils letzten Zeichenfolgen aus dem Input-Text werden nicht angehängt,
 da hierfür kein folgendes Zeichen mehr vorliegt und im nächsten Schritt keine Übergangswahrscheinlichkeit
-bestimmt werden kann. Dies könnte sonst zu einem out of bounds führen. Es muss daher hier - 1 abgezogen werden.
+bestimmt werden kann. Dies könnte sonst zu einem out of bounds error führen. Es muss daher hier - 1 abgezogen werden.
 um das letzte Zeichen des Texts nicht mit auszulesen. """
 
 """ Diese Variable wird in der Schleife genutzt, um alle n-Gramme durchzugehen. """
 nGrammlänge_in_Schleife = Länge_der_n_Gramme
 
-""" Zu Länge_der_n_Gramme wird 1 addiert. Dies verhindert, dass der gesamte Input als ein n-Gramm herangezogen wird.
+""" Zu Länge_der_n_Gramme wird hier 1 addiert. Dies verhindert, dass der gesamte Input als ein n-Gramm herangezogen wird.
 In diesem Fall gäbe es sonst kein Zeichen als value für diesen key und damit käme es zu einem error. """
 if len(file_contents) < Länge_der_n_Gramme + 1:
 	print(Warnung_Länge)
@@ -77,11 +84,11 @@ else:
 		for index in range(len(file_contents) - (nGrammlänge_in_Schleife)):
 			Zeichenfolge_aus_Text = file_contents[index:index + nGrammlänge_in_Schleife]
 			Übergangswahrscheinlichkeiten[Zeichenfolge_aus_Text] = []
-		""" Nachdem alle n-Gramme gespeichert sind, wird 1 davon abgezogen und die dann im nächsten Durchlauf die
-		nächstkleineren n-Gramme gespeichert. """
+		""" Nachdem alle n-Gramme mit der maximal vorgegebenen Länge gespeichert sind, wird 1 von nGrammlänge_in_Schleife
+  		abgezogen. Daher werden im nächsten Durchlaufe die nächstkleineren n-Gramme gespeichert. """
 		nGrammlänge_in_Schleife = nGrammlänge_in_Schleife - 1
 
-# Die auf die n-Gramme jeweils folgenden Zeichen werden in die als values des dicts fungierenden listen abgelegt.
+""" Die auf die n-Gramme jeweils folgenden Zeichen werden in die als values des dicts fungierenden listen abgelegt. """
 
 """ Das Programm die n-Gramme von n bis 1 durch und zieht das auf diese jeweils folgende Zeichen aus dem Input-Text
 Die letzte Zeichenfolge wird jeweils ausgelassen, da auf dieses kein weiteres Zeichen mehr folgt und das Programm
