@@ -137,40 +137,37 @@ Ausgabestring = Ausgabestring + (random.choice(Alphabet_Großbuchstaben))
 """ Zu Länge_der_n_Gramme wird 1 addiert. Dies verhindert, dass der gesamte Input als ein n-Gramm herangezogen wird.
 In diesem Fall gäbe es sonst kein Zeichen als value für diesen key und damit käme es zu einem error. """
 if len(file_contents) >= Länge_der_n_Gramme + 1:
-	""" Der Anfangsteil des Ausgabestrings wird zusammengesetzt """
-	""" Der Anfangsteil des Ausgabestrings muss so lange sein wie Länge_der_n_Gramme, dann kann nach dieser Funktion die
-	Hauptroutine der Analyse starten. """
+	""" Der Anfangsteil des Ausgabestrings wird zusammengesetzt. Der Anfangsteil des Ausgabestrings muss so lange sein wie
+ 	Länge_der_n_Gramme, dann kann nach dieser Funktion die Hauptroutine der Analyse starten. """
 	for Länge_Ausgabe_dynamisch in range (1, Länge_der_n_Gramme):
-		""" Beginnend mit der vollen Länge des Ausgabestrings wird immer wieder um 1 dekrementiert bis 0.
-		Das macht es möglich, immer kleinere Zeichenfolgen vom Endes Ausgabestrings zu betrachten, wenn notwendig. """
+		""" Beginnend mit der vollen Länge des Ausgabestrings wird immer wieder um 1 dekrementiert bis 0 erreicht ist.
+		Das macht es möglich, immer kleinere Zeichenfolgen vom Ende des Ausgabestrings her zu betrachten, wenn notwendig. """
 		for Länge_betrachtete_Zeichenfolge in range(Länge_Ausgabe_dynamisch, -1, -1):
-			""" wurde auch das letzte Zeichen des Outputs nicht gefunden als Key im dict, wird zufällig ein nächstes Zeichen
+			""" Wurde auch das letzte Zeichen des Outputs nicht gefunden als Key im dict, wird zufällig ein nächstes Zeichen
 			bestimmt. """
 			if Länge_betrachtete_Zeichenfolge == 0:
-				""" Wurde kein Match im dict gefunden, auch nicht für das letzte Zeichen des Ausgabestrings, so
+				""" Wurde kein match im dict gefunden, auch nicht für das letzte Zeichen des Ausgabestrings, so
 				wird random ein Zeichen aus dem Alphabet für Kleinbuchstaben gezogen. """
 				Nächstes_Zeichen = (random.choice(Alphabet_Kleinbuchstaben))
-				""" Da ein nächstes Zeichen nun gefunden wurde, wird die innere for Schleife unterbrochen. """
+				""" Da ein nächstes Zeichen für den Ausgabestring gefunden wurde, wird die innere for-Schleife abgebrochen. """
 				break
 			else:
-				""" Geprüft wird, ob die jeweils letzten Zeichen des Outputs ein key im dict sind. Sind sie es, wir zufällig
+				""" Geprüft wird, ob die jeweils letzten Zeichen des Outputs ein key im dict sind. Sind sie es, wird zufällig
 				ein nächstes Zeichen aus dem dazugehörigen value gezogen. """
-				""" Die jeweils letzten Zeichen des Ausgabestrings werden herangezogen und geprüft, ob sie ein key
-				im dict der Übergangswahrscheinlichkeiten sind. """
 				if Ausgabestring[ -(Länge_betrachtete_Zeichenfolge):] in Übergangswahrscheinlichkeiten:
-					""" Gab es ein match im dict, wird das nächste Zeichen random aus der zum key gehörigen Liste als value
-					gezogen. """
+					""" Gab es ein match im dict, wird das nächste Zeichen random aus der zum key gehörigen Liste (die das value
+	 				zu diesem key bildet) gezogen. """
 					Nächstes_Zeichen = random.choice(Übergangswahrscheinlichkeiten[Ausgabestring[ - (Länge_betrachtete_Zeichenfolge):]])
-					""" Da ein nächstes Zeichen nun gefunden wurde, wird die innere for Schleife unterbrochen. """
+					""" Da ein nächstes Zeichen nun gefunden wurde, wird die innere for-Schleife abgebrochen. """
 					break
 		""" Das zuvor bestimmte Zeichen oder die Zeichenfolge wird an das Ende des Outputs angefügt. """
 		Ausgabestring = Ausgabestring + Nächstes_Zeichen
 
 """ Zweites Modul: Hauptteil der Synthesefunktion
 
-Die eigentliche Synthese sucht dann im dict nach keys identisch zu den letzten n Zeichen des bereits bestehenden
-Outputs. Gibt es kein match, sucht es nach den letzten n-1 Zeichen, etc., bis n = 1. Wird auch hier nichts gefunden,
-wird ein zufälliges Zeichen gezogen.
+Die eigentliche Synthese sucht nun im dict nach keys identisch zu den letzten Länge_der_n_Gramme Zeichen des bereits
+bestehenden Outputs. Gibt es kein match, sucht es nach den letzten Länge_der_n_Gramme - 1 Zeichen, etc.,
+bis Länge_der_n_Gramme = 1. Wird auch hier nichts gefunden, wird ein zufälliges Zeichen gezogen.
 
 Der Output wird dann ausgegeben. """
 
