@@ -1,5 +1,6 @@
 # Thomas Nyckel, 2025
 # Revised version 1.1
+# https://github.com/Cantorstaub/Scalable-Markov-Chains
 
 """ For instructions on how to use the program, see the Instructions.md file on GitHub. """
 """ For a brief introduction to the purpose and functionalities of the program, see the README.md file in GitHub. """
