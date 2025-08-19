@@ -128,7 +128,7 @@ Erstes Modul: Anfangsroutine
 
 Da zuerst kein Output vorliegt, aus dem Länge_der_n_Gramme Zeichen oder weniger geholt werden könnten, muss zuerst
 Output bis zur Länge Länge_der_n_Gramme erzeugt werden. Diese Anfangsroutine holt erst zufällig ein Zeichen aus dem
-dafür vorgesehenen Anfangsalphabet (das nicht gleich dem zufälligen Alphabet ist) und sucht dann sukzessiv nach der
+dafür vorgesehenen Anfangsalphabet (das nicht gleich dem zufälligen Alphabet ist) und sucht dann sukzessive nach der
 jeweils schon als Output vorliegenden Zeichenfolge im dict, bis die Länge des Outputs gleich Länge_der_n_Gramme ist. """
 
 """ Der erste Buchstabe des Outputs wird random aus den Großbuchstaben gezogen. """
@@ -166,7 +166,7 @@ if len(file_contents) >= Länge_der_n_Gramme + 1:
 		""" Das zuvor bestimmte Zeichen oder die Zeichenfolge wird an das Ende des Outputs angefügt. """
 		Ausgabestring = Ausgabestring + Nächstes_Zeichen
 
-""" Zweites Modul: Hauptteils der Synthesefunktion
+""" Zweites Modul: Hauptteil der Synthesefunktion
 
 Die eigentliche Synthese sucht dann im dict nach keys identisch zu den letzten n Zeichen des bereits bestehenden
 Outputs. Gibt es kein match, sucht es nach den letzten n-1 Zeichen, etc., bis n = 1. Wird auch hier nichts gefunden,
