@@ -113,7 +113,7 @@ if len(file_contents) >= Länge_der_n_Gramme + 1:
 		for index in range(len(file_contents) - (nGrammlänge_in_Schleife)):
 			Zeichenfolge_aus_Text = file_contents[index:index + nGrammlänge_in_Schleife]
 			""" index + nGrammlänge_in_Schleife + 1 bedeutet, dass das auf die Zeichenfolge jeweils direkt folgende
-			Zeichen aus dem Input in der Liste als Value im dict gespeichert wird. """
+			Zeichen aus dem Input in der Liste als value im dict gespeichert wird. """
 			Übergangswahrscheinlichkeiten[Zeichenfolge_aus_Text].append(file_contents[index + nGrammlänge_in_Schleife])
 		nGrammlänge_in_Schleife = nGrammlänge_in_Schleife - 1
 
@@ -126,10 +126,10 @@ print(f"Analyseteil abgeschlossen\n")
 
 Erstes Modul: Anfangsroutine
 
-Da zuerst kein Output vorliegt, aus dem _n_ Zeichen oder weniger geholt werden könnten, muss zuerst Output bis zur
-Länge n erzeugt werden. Diese Anfangsroutine holt erst zufällig ein Zeichen aus dem dafür vorgesehenen
-Anfangsalphabet (das nicht gleich dem zufälligen Alphabet ist) und sucht dann sukzessiv nach der jeweils schon als
-Output vorliegenden Zeichenfolge im dict, bis die Länge des Outputs gleich n ist. """
+Da zuerst kein Output vorliegt, aus dem Länge_der_n_Gramme Zeichen oder weniger geholt werden könnten, muss zuerst
+Output bis zur Länge Länge_der_n_Gramme erzeugt werden. Diese Anfangsroutine holt erst zufällig ein Zeichen aus dem
+dafür vorgesehenen Anfangsalphabet (das nicht gleich dem zufälligen Alphabet ist) und sucht dann sukzessiv nach der
+jeweils schon als Output vorliegenden Zeichenfolge im dict, bis die Länge des Outputs gleich Länge_der_n_Gramme ist. """
 
 """ Der erste Buchstabe des Outputs wird random aus den Großbuchstaben gezogen. """
 Ausgabestring = Ausgabestring + (random.choice(Alphabet_Großbuchstaben))
