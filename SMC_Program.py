@@ -90,16 +90,16 @@ else:
 
 """ Die auf die n-Gramme jeweils folgenden Zeichen werden in die als values des dicts fungierenden listen abgelegt. """
 
-""" Das Programm die n-Gramme von n bis 1 durch und zieht das auf diese jeweils folgende Zeichen aus dem Input-Text
-Die letzte Zeichenfolge wird jeweils ausgelassen, da auf dieses kein weiteres Zeichen mehr folgt und das Programm
-sonst out of bounds gehen würde. Da oftmals mehrere Values einem gemeinsamen key zugewiesen werden müssen – da auf
-ein und dieselbe Zeichenfolge verschiedene andere Zeichen an unterschiedlichen Stellen des Texts folgen können –,
-werden diese in einer Liste im Dictionary gespeichert. Diese Liste kann später direkt verwendet werden, um im
-Syntheseteil random Zeichen aus ihr zu ziehen. Da in jedem Schritt immer auch das nächstfolgende Zeichen angesteuert
-wird in Zeichen_aus_Text, muss - 1 in der ersten Schleife abgezogen werden. Sonst ginge das Programm über den Umfang
-der Liste hinaus und würde eine Fehlermeldung produzieren. """
+""" Das Programm geht die n-Gramme von nGrammlänge_in_Schleife bis 1 durch und zieht das auf diese jeweils folgende
+Zeichen aus dem Input-Text. Die letzte Zeichenfolge wird jeweils ausgelassen, da auf dieses kein weiteres Zeichen mehr
+folgt und das Programm sonst out of bounds gehen würde. Da oftmals mehrere values einem gemeinsamen key zugewiesen werden
+müssen – dies ist der Fall, da auf ein und dieselbe Zeichenfolge verschiedene andere Zeichen an unterschiedlichen Stellen
+des Texts folgen können –, werden diese in Listen im Dictionary gespeichert. Diese Listen können später direkt verwendet
+werden, um im Syntheseteil random Zeichen aus ihnen zu ziehen. Da in jedem Schritt immer auch das nächstfolgende Zeichen
+angesteuert wird in Zeichen_aus_Text, muss - 1 in der ersten Schleife abgezogen werden. Sonst ginge das Programm über den
+Umfang der Liste hinaus und würde eine Fehlermeldung produzieren. """
 
-""" Diese Variable wird in der Schleife genutzt, um alle n-Gramme durchzugehen. """
+""" Diese Variable wird erneut in der Schleife genutzt, um alle n-Gramme durchzugehen. """
 nGrammlänge_in_Schleife = Länge_der_n_Gramme
 
 """ Zu Länge_der_n_Gramme wird 1 addiert. Dies verhindert, dass der gesamte Input als ein n-Gramm herangezogen wird.
