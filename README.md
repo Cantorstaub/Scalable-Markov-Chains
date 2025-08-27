@@ -26,4 +26,6 @@ As the program is intended for didactic purposes and newcomers to _Python_, it i
 
 [[2]](#_ftnref2) See Kittler, Friedrich A. (1997): The World of the Symbolic – A World of the Machine. In Kittler, Friedrich A.: _Literature, Media, Information Systems: Friedrich A. Kittler Essays_. Edited by John Johnston. Critical Voices in Art, Theory and Culture. The series is edited by Saul Ostrow. Translated by Stefanie Harris. London/New York: Routledge, pp. 130–146. Here, the passage on Shannon’s Markov chains is on pp. 140–141. The German version was published in: Kittler, Friedrich A. (1993): ‚Die Welt des Symbolischen - eine Welt der Maschine‘. In _Draculas Vermächtnis: Technische Schriften_. First edition. Leipzig: Reclam, pp. 58–80, where you find the passage on Shannon’s Markov chains on p. 73.
 
+---
+
 _last edit_: 2025-08-27
