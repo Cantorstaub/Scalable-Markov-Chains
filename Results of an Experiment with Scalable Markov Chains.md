@@ -14,7 +14,7 @@ All results – besides the last one with an n-gram length of 25 – were create
 
 To stay consistent with the variables used in the program’s code, the original German names were left in place. Here is some sort of translation and explanation for the content of each output for orientation:
 
-`Länge_der_n_Gramme` in line 1 translates to `length_of_n-gram`
+`Länge_der_n_Gramme` in line 1 translates to `length_of_n-gram` <br>
 Here you can change the length of the n-gram that the program should take into account. This variable was incremented by one with each iteration. Only at the very end was it increased from 18 to 25 in one step.
 
 'laenge_Ausgabe` in line 2 translates to `length_of_output`
