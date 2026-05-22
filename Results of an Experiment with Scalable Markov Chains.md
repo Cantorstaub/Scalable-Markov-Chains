@@ -33,7 +33,9 @@ The experiment started with unigrams and increased the n-gram length step by ste
 
 One can see how the quality of the output increases from step to step. The words and sentences seem to become clearer and indicate that the holy book was used as the program’s input. Eventually, the program stops creating new text from its input and instead becomes a copy-pasta machine, delivering original passages from the Bible without having the ability to generate novel patterns from it.
 
-I added a few comments along the lines. Each comment belongs to the one block with text from the output directly above it. 
+I added a few comments along the lines. Each comment belongs to the one block with text from the output directly above it.
+
+---
 
 ```
 Länge_der_n_Gramme = 1
