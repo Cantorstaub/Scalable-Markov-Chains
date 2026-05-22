@@ -4,7 +4,7 @@ https://github.com/Cantorstaub/Scalable-Markov-Chains
 
 The following results show how the quality of the program’s output increases when the size of the n-grams considered grows larger.
 
-As input for the program to analyze transition probabilities the _Webster’s Bible_ was downloaded from 
+As input for the program to analyze transition probabilities the _Webster’s Bible_ was downloaded from [https://openbible.com/textfiles/wbt.txt](https://openbible.com/textfiles/wbt.txt) on 2025-12-19.
 
 All results – besides the last one with an n-gram length of 25 – were created on December 19th 2025. The last results with an n-gram length of 25 were created on December 23rd 2025.
 
