@@ -17,10 +17,10 @@ To stay consistent with the variables used in the program’s code, the original
 `Länge_der_n_Gramme` in line 1 translates to `length_of_n-gram` <br>
 Here you can change the length of the n-gram that the program should take into account. This variable was incremented by one with each iteration. Only at the very end was it increased from 18 to 25 in one step.
 
-'laenge_Ausgabe` in line 2 translates to `length_of_output`
+'laenge_Ausgabe` in line 2 translates to `length_of_output` <br>
 With this variable, you can define how many characters the final input of the program should consist of. This was consistently set to 150 characters for each output. The only exception is the very last iteration of this experiment, where it was set to 500.
 
-`Generierter Text:` in line 4 translates to `Generated text:`
+`Generierter Text:` in line 4 translates to `Generated text:` <br>
 This phrase indicates no variable of the program, but is just a headline that the program prints in its output before the created text itself follows below.
 
 The text in line 6 is the output created by the program, the “artificial language” that this program was made to study.
