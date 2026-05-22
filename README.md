@@ -6,7 +6,7 @@
 
 For instructions on how to use the program, go to the `Instructions.md` file.
 
-To study some exemplary results of created by the Scalable Markov Chains program, go to the `Resulsts of an Experiment with Scalable Markov Chains` file.
+To study some exemplary results of created by the Scalable Markov Chains program, go to the `Results of an Experiment with Scalable Markov Chains` file.
 
 The program _Scalable Markov Chains_ was created while teaching the seminar _Programming in Python as AI Critique_ at the University of Regensburg in 2025. It analyzes arbitrary input text and stores the probabilities for symbols to follow each other. The program then creates new text randomly by using these probabilities.
 
